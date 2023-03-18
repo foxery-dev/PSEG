@@ -1,5 +1,9 @@
+use text_io::read;
+
 mod evaluate;
 
 fn main() {
-  println!("{}", evaluate::evaluate("H8=b@d"));
+  print!("Enter Password for Evaluation: ");
+  let password: String = read!();
+  println!("{}", evaluate::evaluate(password.as_str()));
 }
