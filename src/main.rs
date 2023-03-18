@@ -1,3 +1,5 @@
+mod evaluate;
+
 fn main() {
-    println!("Hello, world!");
+  println!("{}", evaluate::evaluate("H8=b@d"));
 }
